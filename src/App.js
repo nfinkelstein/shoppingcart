@@ -1,5 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import ProductGrid from "./Components/ProductGrid";
+import Sizes from "./Components/Sizes";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -19,10 +21,12 @@ const App = () => {
 
   return (
     <section>
-      <div className="container menu" />
-      {products.map((item, index) => (
-        <li>{item.title}</li>
-      ))}
+      <div>
+        <div className="sizes">
+          <Sizes />
+        </div>
+        <ProductGrid products={products} />
+      </div>
     </section>
   );
 };
