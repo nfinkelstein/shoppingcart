@@ -44,7 +44,11 @@ function MediaCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions style={{ justifyContent: "center" }}>
-        <Button size="small" color="primary">
+        <Button
+          onClick={() => props.addItem(props.item)}
+          size="small"
+          color="primary"
+        >
           Add to Cart
         </Button>
       </CardActions>

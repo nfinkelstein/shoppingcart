@@ -14,7 +14,7 @@ const ProductGrid = props => {
       >
         {props.products.map((currentProduct, i) => (
           <Grid key={i} item xs={12} sm={6} lg={3} xl={3}>
-            <Card item={currentProduct} />
+            <Card item={currentProduct} addItem={props.addItem} />
           </Grid>
         ))}
       </Grid>

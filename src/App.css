@@ -3,3 +3,9 @@
     align-items: center;
     justify-content: center;
 }
+
+.viewCart{
+    display: flex;
+    justify-content: right;
+    float: right;
+}

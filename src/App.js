@@ -1,7 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import ProductGrid from "./Components/ProductGrid";
-import Sizes from "./Components/Sizes";
+import MasterStatus from "./Components/MasterStatus";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -21,12 +20,7 @@ const App = () => {
 
   return (
     <section>
-      <div>
-        <div className="sizes">
-          <Sizes />
-        </div>
-        <ProductGrid products={products} />
-      </div>
+      <MasterStatus products={products} />
     </section>
   );
 };
